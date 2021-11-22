@@ -62,16 +62,18 @@ body {
     }
 
         .cell.x::before,
-        .cell.x::after,
-        .cell.circle::before {
-            background-color: black;
+        .cell.x::after {
+            background-color: red;
+        }
+        .cell.circle::before{
+            background-color: blue;
         }
 
-.board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:not(.x):not(.circle):hover::after,
-.board.circle .cell:not(.x):not(.circle):hover::before {
-    background-color: lightgrey;
-}
+        .board.x .cell:not(.x):not(.circle):hover::before,
+        .board.x .cell:not(.x):not(.circle):hover::after,
+        .board.circle .cell:not(.x):not(.circle):hover::before {
+            background-color: black;
+        }
 
 .cell.x::before,
 .cell.x::after,
@@ -125,22 +127,22 @@ body {
     background-color: rgba(0, 0, 0, .9);
     justify-content: center;
     align-items: center;
-    color: white;
+    color: mediumpurple;
     font-size: 5rem;
     flex-direction: column;
 }
 
     .winning-message button {
         font-size: 3rem;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 10%);
         border: 1px solid black;
         padding: .25em .5em;
         cursor: pointer;
     }
 
         .winning-message button:hover {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             border-color: white;
         }
 
